@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Playwrite AT", cursive;
+}
+
+.content_tt {
+    flex-flow: column;
+    width: 100%;
+    padding-top: 5%;
+   /* border: 2px solid red; /*BORDA*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_tt h1{
+    font-size: 50px;
+}
+
+.content_tt p{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.content_log{
+    flex-flow: column;
+    width: 100%;
+    padding-top: 2%;
+  /*  border: 2px solid rgb(55, 0, 255); /*BORDA*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log{
+    padding: 10px;
+    padding-inline: 25px;
+    margin: 5px;
+}
+
+.btn{
+    cursor: pointer;
+    margin-top: 1%;
+    padding: 5px;
+    padding-inline: 20px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Barros (pedro.dev)">
+    <link rel="shortcut icon" href="/img/jogo-da-velha.png">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="/css/style_base.css">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <section id="cadastro">
+        <div class="content_tt">
+            <h1>FAÇA SEU LOGIN</h1>
+            <p>cadastre seu nome para jogar!</p>
+        </div>
+
+        <div class="content_log">
+            <p>Jogador "X"</p>
+            <input class="log" type="text" placeholder="seu nome" id="jogadorX">
+            <br>
+            <p>Jogador "O"</p>
+            <input class="log" type="text" placeholder="seu nome" id="jogadorO">
+            <button onclick="salvarNomes()" class="btn">Jogar</button>
+        </div>
+    </section>
+
+    <script src="/js/cadastro.js"></script>
+</body>
+
+<!-- PARTE 2 DO WEBGAME -->
+
+<body>
+    <section id="main-game" style="display: none;">
+        <div class="content-main">
+            <main>
+                <h1>Jogo da Velha</h1>
+                <hr>
+                <div class="game">
+                    <button data-i="1"></button>
+                    <button data-i="2"></button>
+                    <button data-i="3"></button>
+                    <button data-i="4"></button>
+                    <button data-i="5"></button>
+                    <button data-i="6"></button>
+                    <button data-i="7"></button>
+                    <button data-i="8"></button>
+                    <button data-i="9"></button>
+                </div>
+                <h2 class="proximoJogador"></h2>
+            </main>
+
+        </div>
+
+        <!-- Exibição da pontuação -->
+        <div class="content-pontos">
+            <div class="pontuacao">
+                <h2>NÚMERO DE VÍTORIAS</h2>
+
+                <!-- Jogadores e suas pontuações -->
+                <div class="linha-pontos">
+                    <h3 id="nomeJogadorX">Jogador X</h3>
+                    <span> : </span>
+                    <p class="pontos" id="pontosX">0</p>
+                </div>
+
+                <p>VS</p>
+
+                <div class="linha-pontos">
+                    <h3 id="nomeJogadorO">Jogador O</h3>
+                    <span> : </span>
+                    <p class="pontos" id="pontosO">0</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <footer>
+                <h3>dev.Pedro Barros</h3>
+            </footer>
+        </div>
+    </section>
+    <script src="/js/script_base.js"></script>
+</body>
+
+</html>

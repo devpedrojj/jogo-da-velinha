@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite AT", cursive;
+}
+
+.content-main {
+    height: 71vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+hr {
+    font-weight: bold;
+    height: 3px;
+    background: black;
+    margin-bottom: 10px;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    background: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 10px;
+    margin-top: 3%;
+}
+
+/* pontuação */
+.content-pontos {
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;     /* Centraliza o conteúdo verticalmente */
+    flex-direction: column;  /* Alinha os itens verticalmente */
+}
+
+/* Estilização para alinhar o nome, dois pontos e pontuação na mesma linha */
+.linha-pontos {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;     /* Alinha verticalmente os itens */
+    gap: 10px;               /* Espaço entre os elementos */
+}
+
+h3 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.pontuacao {
+    text-align: center;
+}
+
+.pontos {
+    font-weight: bold;
+}
